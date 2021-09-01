@@ -1,0 +1,10 @@
+.container {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	font-family: sans-serif;
+	background: rgb(244, 252, 255);
+}
+
+@import "./form";
+@import "./cafes";
