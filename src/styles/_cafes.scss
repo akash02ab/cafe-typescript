@@ -8,6 +8,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	align-content: center;
 	gap: 4rem;
 	min-height: 100vh;
 
@@ -29,6 +30,8 @@
 	}
 
 	& .cafe {
+		@include flex(column);
+		gap: 0.5rem;
 		width: 16rem;
 		height: 8rem;
 		padding: 1rem;

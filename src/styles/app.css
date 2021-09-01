@@ -1,168 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container {
-	min-height: 100vh;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	font-family: sans-serif;
-	background: #f4fcff;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: sans-serif;
+  background: #f4fcff;
 }
 
 .form {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-ms-flex-item-align: center;
-	align-self: center;
-	gap: 1rem;
-	padding: 1rem;
-	width: 25vw;
-	-webkit-box-shadow: 1px 1px 6px 1px rgba(0, 255, 0, 0.25);
-	box-shadow: 1px 1px 6px 1px rgba(0, 255, 0, 0.25);
-	position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  gap: 1rem;
+  padding: 1rem;
+  width: 25vw;
+  -webkit-box-shadow: 1px 1px 6px 1px rgba(0, 255, 0, 0.25);
+          box-shadow: 1px 1px 6px 1px rgba(0, 255, 0, 0.25);
+  position: relative;
 }
 
 .form h2 {
-	-ms-flex-item-align: center;
-	-ms-grid-row-align: center;
-	align-self: center;
-	position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
 }
 
 .form h2::after {
-	content: "";
-	width: 100%;
-	height: 3px;
-	background: lime;
-	position: absolute;
-	bottom: -10%;
-	left: 0;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: lime;
+  position: absolute;
+  bottom: -10%;
+  left: 0;
 }
 
 .form fieldset {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	gap: 0.5rem;
-	border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  border: none;
 }
 
 .form fieldset > label::before {
-	content: "*";
-	color: red;
+  content: "*";
+  color: red;
 }
 
 .form fieldset > input {
-	padding: 1rem;
-	border: 1px solid lightblue;
+  padding: 1rem;
+  border: 1px solid lightblue;
 }
 
 .form fieldset > input:focus {
-	outline: none;
-	border: 1px solid royalblue;
+  outline: none;
+  border: 1px solid royalblue;
 }
 
 .form .offers {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form .offers input[type="radio"] {
-	accent-color: lime;
+  accent-color: lime;
 }
 
 .form button {
-	width: 50%;
-	height: 3rem;
-	-ms-flex-item-align: center;
-	-ms-grid-row-align: center;
-	align-self: center;
-	color: white;
-	background: lime;
-	font-size: 1.5em;
-	border: none;
-	-webkit-box-shadow: 1px 1px 6px 1px rgba(0, 255, 0, 0.5);
-	box-shadow: 1px 1px 6px 1px rgba(0, 255, 0, 0.5);
+  width: 50%;
+  height: 3rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  background: lime;
+  font-size: 1.5em;
+  border: none;
+  -webkit-box-shadow: 1px 1px 6px 1px rgba(0, 255, 0, 0.5);
+          box-shadow: 1px 1px 6px 1px rgba(0, 255, 0, 0.5);
 }
 
 .form button:hover {
-	cursor: pointer;
-	background: #00cc00;
+  cursor: pointer;
+  background: #00cc00;
 }
 
 .form .error {
-	position: absolute;
-	bottom: 10%;
-	left: 30%;
-	font-size: 0.8em;
-	color: rgba(255, 0, 0, 0.5);
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  font-size: 0.8em;
+  color: rgba(255, 0, 0, 0.5);
 }
 
 .form .disabled {
-	background: lightslategrey;
+  background: lightslategrey;
 }
 
 .cafes {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	gap: 4rem;
-	min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 4rem;
+  min-height: 100vh;
 }
 
 .cafes h1 {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .cafes h1::after {
-	content: "";
-	width: 100%;
-	height: 5px;
-	background: lime;
-	position: absolute;
-	left: 0%;
-	bottom: 0%;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: lime;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
 }
 
 .cafes .cafe {
-	width: 16rem;
-	height: 8rem;
-	padding: 1rem;
-	-webkit-box-shadow: 1px 1px 6px 1px rgba(0, 255, 0, 0.5);
-	box-shadow: 1px 1px 6px 1px rgba(0, 255, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  width: 16rem;
+  height: 8rem;
+  padding: 1rem;
+  -webkit-box-shadow: 1px 1px 6px 1px rgba(0, 255, 0, 0.5);
+          box-shadow: 1px 1px 6px 1px rgba(0, 255, 0, 0.5);
 }
 /*# sourceMappingURL=app.css.map */
