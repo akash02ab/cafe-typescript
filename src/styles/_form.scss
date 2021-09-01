@@ -60,6 +60,7 @@
 	& button {
 		width: 50%;
 		height: 3rem;
+		margin-top: 2rem;
 		align-self: center;
 		color: rgb(255, 255, 255);
 		background: rgb(0, 255, 0);
@@ -75,7 +76,7 @@
 
 	& .error {
 		position: absolute;
-		bottom: 10%;
+		bottom: 15%;
 		left: 30%;
 		font-size: 0.8em;
 		color: rgba(255, 0, 0, 0.5);

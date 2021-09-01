@@ -10,11 +10,12 @@
 	align-items: center;
 	align-content: center;
 	gap: 4rem;
+	padding: 4rem;
 	min-height: 100vh;
 
 	& h1 {
 		position: absolute;
-		top: 0;
+		top: 5%;
 		left: 50%;
 		transform: translateX(-50%);
 	}

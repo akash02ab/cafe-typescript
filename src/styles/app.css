@@ -99,6 +99,7 @@
 .form button {
   width: 50%;
   height: 3rem;
+  margin-top: 2rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -117,7 +118,7 @@
 
 .form .error {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: 30%;
   font-size: 0.8em;
   color: rgba(255, 0, 0, 0.5);
@@ -146,12 +147,13 @@
   -ms-flex-line-pack: center;
       align-content: center;
   gap: 4rem;
+  padding: 4rem;
   min-height: 100vh;
 }
 
 .cafes h1 {
   position: absolute;
-  top: 0;
+  top: 5%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
